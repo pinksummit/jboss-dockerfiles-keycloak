@@ -1,4 +1,4 @@
-FROM jboss/base-jdk:8
+FROM docker-devcloud.di2e.net/di2e/jboss/base-jdk:8.0
 
 ENV KEYCLOAK_VERSION 4.4.0.Final
 ENV JDBC_POSTGRES_VERSION 42.2.2
@@ -12,7 +12,7 @@ ENV LANG en_US.UTF-8
 
 ARG GIT_REPO
 ARG GIT_BRANCH
-ARG KEYCLOAK_DIST=https://downloads.jboss.org/keycloak/$KEYCLOAK_VERSION/keycloak-$KEYCLOAK_VERSION.tar.gz
+#ARG KEYCLOAK_DIST=https://downloads.jboss.org/keycloak/$KEYCLOAK_VERSION/keycloak-$KEYCLOAK_VERSION.tar.gz
 
 USER root
 
